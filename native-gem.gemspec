@@ -10,7 +10,6 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{A simple gem with native extensions}
   s.description = %q{A simple gem with native extensions, built using bunlder and rake-compiler}
-  s.platform = Gem::Platform::RUBY
 
   s.rubyforge_project = "native-gem"
 
@@ -18,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  s.extensions = ["ext/native-gem/extconf.rb"]
+  s.extensions = ["ext/native_gem/extconf.rb"]
 
   s.add_development_dependency "rake-compiler"
 end
