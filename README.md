@@ -9,7 +9,7 @@ native-gem is an example gem with a native extension. It uses bundler and rake-c
 
     $ gem install native-gem
 
-##Useage
+##Usage
 
 ```ruby
 require 'native-gem'
