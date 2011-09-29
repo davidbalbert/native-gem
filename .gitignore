@@ -5,3 +5,4 @@ pkg/*
 .junk
 .rvmrc
 tmp
+lib/native-gem.bundle
