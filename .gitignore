@@ -4,3 +4,4 @@ Gemfile.lock
 pkg/*
 .junk
 .rvmrc
+tmp
