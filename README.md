@@ -5,11 +5,11 @@ native-gem
 
 native-gem is an example gem with a native extension. It uses bundler and rake-compiler. It provides a `NativeGem` module with a `hello_world` method defined in C.
 
-###Install
+##Install
 
     $ gem install native-gem
 
-###Useage
+##Useage
 
 ```ruby
 require 'native-gem'
@@ -17,6 +17,13 @@ NativeGem.hello_world
 # => "hello, world!"
 ```
 
-###License
+##Build it yourself
+
+    $ git clone git://github.com/davidbalbert/native-gem
+    $ cd native-gem
+    $ bundle install
+    $ rake compile
+
+##License
 
 native-gem is in the public domain.
