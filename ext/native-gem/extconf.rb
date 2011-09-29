@@ -1,3 +1,3 @@
 require 'mkmf'
 
-create_makefile("native-gem/native-gem")
+create_makefile("native-gem/native_gem")
