@@ -1,7 +1,5 @@
 require "native-gem/version"
+require "native-gem/native-gem"
 
-module Native
-  module Gem
-    # Your code goes here...
-  end
+module NativeGem
 end

@@ -4,12 +4,13 @@ require "native-gem/version"
 
 Gem::Specification.new do |s|
   s.name        = "native-gem"
-  s.version     = Native::Gem::VERSION
+  s.version     = NativeGem::VERSION
   s.authors     = ["David Albert"]
   s.email       = ["davidbalbert@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{TODO: Write a gem summary}
   s.description = %q{TODO: Write a gem description}
+  s.platform = Gem::Platform::RUBY
 
   s.rubyforge_project = "native-gem"
 
@@ -17,6 +18,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.extensions = ["ext/native-gem/extconf.rb"]
 
   s.add_development_dependency "rake-compiler"
 end
